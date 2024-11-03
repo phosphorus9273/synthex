@@ -2225,10 +2225,10 @@ window.onload = async () => {
     );
     global.clickables.stat.hide();
     let vspacing = 4;
-    let height = 12;
+    let height = 14;
     let gap = 40;
-    let len = alcoveSize; // * global.screenWidth; // The 30 is for the value modifiers
-    let save = len - 8;
+    let len = alcoveSize // The 30 is for the value modifiers
+    let save = len - 6;
     let x =
       spacing +
       (statMenu.get() - 1) *
