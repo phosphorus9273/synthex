@@ -198,6 +198,11 @@ window.onload = async () => {
   const servers = [
     ["ea.synthx.cc", "EU", true, 0],
     ];
+
+    const serverFromUrl = new URLSearchParams(window.location.search).get("s");
+    if (serverFromUrl) {
+    servers.push([serverFromUrl, "X", true, 0]);
+    }
   
     window.isMultiserver = true;
     let serverSelector = document.getElementById("serverSelector"),
